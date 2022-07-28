@@ -11,10 +11,15 @@ console.log(computerNumero);
 const somma = computerNumero + numeroUtente;
 console.log(somma);
 
-function isEven() {
-    if (somma %  2 === 0) {
+function winner() {
+
+    if ((somma %  2 === 0) && (pariDispari ==='pari')) {
         return true;
+    }else if ((somma %  2 === 1) && (pariDispari ==='dispari')) {
+        return true;
+    }else {
+        return false;
     }
 }
 
-console.log(isEven(somma));
+console.log(winner(somma));

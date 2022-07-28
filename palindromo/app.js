@@ -1,12 +1,18 @@
 
 
 const word = prompt('inserisci una parola');
-const wordArray = word.split('');
-const wordArrayReversed = wordArray.reverse();
+let wordArray = word.split('');
 
-console.log(wordArray, wordArrayReversed);
+console.log(wordArray);
 
 function isPalindrome(word) {
-    if (wordArray === wordArrayReversed);
-    return true
+    let arrayReverse = [];
+    for (let i = word.length - 1 ; i >= 0; i-- ) {
+        arrayReverse.push(word[i]);   
+    }
+    return arrayReverse
 }
+
+console.log(isPalindrome(wordArray));
+
+// console.log(isPalindrome(word));

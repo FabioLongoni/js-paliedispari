@@ -2,17 +2,29 @@
 
 const word = prompt('inserisci una parola');
 let wordArray = word.split('');
-
 console.log(wordArray);
 
+let arrayReverse = [];
+
 function isPalindrome(word) {
-    let arrayReverse = [];
+    
+
     for (let i = word.length - 1 ; i >= 0; i-- ) {
-        arrayReverse.push(word[i]);   
+        arrayReverse.push(word[i]); 
     }
-    return arrayReverse
+    
+    if(wordArray.join('')===arrayReverse.join('')) {
+        console.log(arrayReverse);
+        return true;
+    }else {
+        console.log(arrayReverse);
+        return false;
+
+    }
+    
 }
 
-console.log(isPalindrome(wordArray));
+console.log(isPalindrome(word));
 
-// console.log(isPalindrome(word));
+
+// console.log(isPalindrome(word));giac

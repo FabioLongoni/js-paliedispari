@@ -26,5 +26,3 @@ function isPalindrome(word) {
 
 console.log(isPalindrome(word));
 
-
-// console.log(isPalindrome(word));giac
